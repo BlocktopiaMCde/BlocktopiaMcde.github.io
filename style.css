@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, 'Segoe UI', sans-serif;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #d2fdd1;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.server-info {
+    background-color: #55a55538;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.server-info h2 {
+    font-size: 2rem;
+}
+
+.server-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #6de96d; /* Grün für die Texte */
+}
+
+.server-info strong {
+    color: #ffffff; /* Helle grüne Farbe für die Markierungen */
+}
+
+.server-info button {
+    background-color: #f5ffac99;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.server-info button:hover {
+    background-color: #80e880;
+    transition: transform 3s ease, box-shadow 3s ease;
+}
+
+.news {
+    margin-top: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.news img {
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news img:hover + .hover-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hover-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.news:hover .hover-text::before {
+    opacity: 0;
+}
+
+.news:hover .hover-text::after {
+    visibility: visible;
+    opacity: 2;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;
+}
+
+.status{
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.status h3{
+    color: #fab650;
+}
